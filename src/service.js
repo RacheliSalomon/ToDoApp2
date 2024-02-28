@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as AxiosLogger from 'axios-logger';
 
 const api = axios.create({
-  baseURL: "http://localhost:5006"
+  baseURL: process.env.REACT_APP_API
 });
 // api.interceptors.response.use(
 //     response =>  response.data,
